@@ -26,8 +26,8 @@ const AddContact = ({
         value={number}
         onChange={inputChange}
       />
-      <button type='submit'>Add</button>
-      <button type='reset'>Clear</button>
+      <button type='submit'>{update ? 'Update' : 'Add'}</button>
+      <button type='reset'>{update ? 'Cancel' : 'Clear'}</button>
     </form>
   );
 };
