@@ -8,10 +8,10 @@ const Contact = ({ name, number, id, onDelete, onEdit }) => {
         <p className='contact-number'>{number}</p>
       </div>
       <div className='button-group'>
-        <button className='delete' onClick={() => onEdit(id)}>
+        <button className='btn-edit' onClick={() => onEdit(id)}>
           Edit
         </button>
-        <button className='delete' onClick={() => onDelete(id)}>
+        <button className='btn-delete' onClick={() => onDelete(id)}>
           Delete
         </button>
       </div>
