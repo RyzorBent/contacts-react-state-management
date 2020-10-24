@@ -5,6 +5,7 @@
   padding: 0px 10px;
 }
 .add-contact {
+  background-color: lightblue;
   border: solid 1px gray;
   border-radius: 10px;
   margin: 10px;
@@ -15,13 +16,45 @@
   max-width: 300px;
   height: 100%;
 }
+
 .add-contact input,
 .add-contact button {
   outline: none;
   padding: 10px 20px;
   border-radius: 10px;
-  margin: 10px 0px;
 }
+
+.add-contact input {
+  margin: 10px 0px 10px;
+  border-width: 0px;
+}
+
+.add-contact button {
+  margin: 0px 0px 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-submit {
+  background-color: lightgreen;
+}
+
+.btn-submit:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-reset {
+  background-color: lightpink;
+}
+
+.btn-reset:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -30,6 +63,7 @@
   width: 500px;
 }
 .contact {
+  background-color: #fff;
   width: 100%;
   max-width: 500px;
   padding: 10px 20px;
@@ -49,4 +83,34 @@
 .contact-number {
   padding: 0px;
   margin: 0px;
+}
+
+.button-group button {
+  margin: 0px 5px;
+  padding: 3px 6px;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-edit {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-edit:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
 }
